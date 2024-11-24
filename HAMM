@@ -1,0 +1,15 @@
+'C:\\Users\\ali\\miniforge3'
+# read the DNA string from files
+>>> def calculate_hamming_distance_from_file(file_path):
+...  with open(file_path, 'r') as file:
+#read both lines
+...    s = file.readline().strip()
+...    t = file.readline().strip()
+# calculating hamming distance between 2 strings
+...  return hamming_distance(s, t)
+...
+#specify the file path
+>>> file_path = 'C:/Users/ali/miniforge3/rosalind_hamm.txt'
+#calculate and print hamming distance
+>>> result = calculate_hamming_distance_from_file(file_path)
+>>> print(result)
